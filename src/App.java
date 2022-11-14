@@ -1,29 +1,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int[] arrayOfNumbers = { 25, 12, 7, 98, 52, 36, 83, 71, 1, 2, 3, 4, 5 };
-
-        System.out.println("The sum of the array is: " + getSum(arrayOfNumbers));
-        System.out.println("The average of the array is: " + getAverage(arrayOfNumbers));
-        System.out.println("The second largest number is: " + getSecondLargest(arrayOfNumbers));
-        System.out.println("The second smallest number is: " + getSecondSmallest(arrayOfNumbers));
-
-        int[][] matrix2D = {
-                { 1, 2, 3, 4, 5 },
-                { 6, 7, 8, 9, 10 },
-                { 11, 12, 13, 14, 15 },
-                { 16, 17, 18, 19, 20 },
-                { 21, 22, 23, 24, 25 }
-        };
-
-        System.out.println("The Left Diagonal of the matrix is: ");
-        printLeftDiagonal(matrix2D);
-        System.out.println("The Right Diagonal of the matrix is: ");
-        printRightDiagonal(matrix2D);
-
-        System.out.println("The difference between the sum of the left diagonal and the right diagonal is: "
-                + getDiagonalDifference(matrix2D));
-
+        System.out.println("Hello, World!");
     }
 
     public static void printLeftDiagonal(int[][] matrix2D) {
@@ -48,8 +26,6 @@ public class App {
         System.out.println();
     }
 
-    // This method returns the difference between the left and the right diagonals
-    // of a given matrix
     public static int getDiagonalDifference(int[][] matrix2D) {
         int leftDiagonal = 0;
         int rightDiagonal = 0;
