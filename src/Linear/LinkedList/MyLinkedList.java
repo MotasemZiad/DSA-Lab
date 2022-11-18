@@ -25,7 +25,6 @@ public class MyLinkedList<T> implements MyList<T> {
         for (int i = 0; i < index; i++) {
             current = current.next;
         }
-
         return current;
     }
 
