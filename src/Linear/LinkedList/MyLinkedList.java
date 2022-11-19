@@ -33,7 +33,7 @@ public class MyLinkedList<T> implements MyList<T> {
             return;
 
         T removedItem = remove(index);
-        add(index, removedItem);
+        add(removedItem);
     }
 
     @Override
