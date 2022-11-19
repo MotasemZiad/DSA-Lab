@@ -28,6 +28,14 @@ public class MyLinkedList<T> implements MyList<T> {
         return current;
     }
 
+    public void moveToEnd(int index) {
+        if (!checkIndex(index))
+            return;
+
+        T removedItem = remove(index);
+        add(index, removedItem);
+    }
+
     @Override
     public void add(T item) {
         if (item == null)
