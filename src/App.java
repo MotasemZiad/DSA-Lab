@@ -1,7 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Data Structure and Algorithms");
-
     }
 
     public static void printLeftDiagonal(int[][] matrix2D) {

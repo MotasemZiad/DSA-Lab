@@ -28,7 +28,7 @@ class Rectangle extends Shape {
         this.dimension = dimension;
     }
 
-    static class Dimension {
+    public static class Dimension {
         private double length;
         private double width;
 
