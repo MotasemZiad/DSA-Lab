@@ -118,6 +118,20 @@ public class MyLinkedList<T> implements MyList<T> {
         currentNode.setElement(item);
     }
 
+    public void removeDuplicates() {
+        if (this.isEmpty()) {
+            return;
+        }
+        Node<T> current = this.head;
+        while (current.next != null) {
+            if (current.element == current.next.element) {
+                current.next = current.next.next;
+            } else {
+                current = current.next;
+            }
+        }
+    }
+
     @Override
     public T get(int index) {
         if (!checkIndex(index))
